@@ -29,6 +29,11 @@ class ImplementacionModelos(ModelosMatematicos):
         dy_dt = a / V *(x - y)
         return np.array([dx_dt, dy_dt])
     
+    @staticmethod
+    def modelo_disolucion(y0, ve, vs, ce, V):
+
+        return ve * ce - (vs / (V + (ve - vs))) * y0
+    
     
 #a = 0.5  # Ejemplo de valor para la constante de eficacia
 #v = 1.0  # Ejemplo de valor para la tasa de flujo volumétrico de la sangre

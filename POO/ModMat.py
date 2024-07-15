@@ -8,3 +8,7 @@ class ModelosMatematicos(ABC):
     @abstractmethod
     def modelo_riñon_artificial(r_, a, v, V):
         pass
+
+    @abstractmethod
+    def modelo_disolucion(ve, vs, ce, V):
+        pass
